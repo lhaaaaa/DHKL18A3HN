@@ -308,5 +308,75 @@ Admin@Quyn MINGW64 ~/Desktop/24174600129_Dao_Thi_Quyen_bai_tap_18A3 (main)
 $ git branch -D branch_5
 Deleted branch branch_5 (was d3f5788).
 câu 9
-làm trên pull 
+làm trên pull
+câu 10
+Admin@Quyn MINGW64 ~/Desktop/24174600129_Dao_Thi_Quyen_bai_tap_18A3 (main)
+$ git branch -d branch_2
+warning: deleting branch 'branch_2' that has been merged to
+         'refs/remotes/origin/branch_2', but not yet merged to HEAD
+Deleted branch branch_2 (was 5c2bd54).
+
+Admin@Quyn MINGW64 ~/Desktop/24174600129_Dao_Thi_Quyen_bai_tap_18A3 (main)
+$ git branch -d branch_3
+warning: deleting branch 'branch_3' that has been merged to
+         'refs/remotes/origin/branch_3', but not yet merged to HEAD
+Deleted branch branch_3 (was cb5f23b).
+
+Admin@Quyn MINGW64 ~/Desktop/24174600129_Dao_Thi_Quyen_bai_tap_18A3 (main)
+$ git branch -d branch_4
+error: branch 'branch_4' not found
+
+Admin@Quyn MINGW64 ~/Desktop/24174600129_Dao_Thi_Quyen_bai_tap_18A3 (main)
+$  git push origin --delete branch_2
+To https://github.com/Daothiquyen24174600129/24174600129_Dao_Thi_Quyen_bai_tap_18A3.git
+ - [deleted]         branch_2
+
+Admin@Quyn MINGW64 ~/Desktop/24174600129_Dao_Thi_Quyen_bai_tap_18A3 (main)
+$ git push origin --delete branch_3
+To https://github.com/Daothiquyen24174600129/24174600129_Dao_Thi_Quyen_bai_tap_18A3.git
+ - [deleted]         branch_3
+
+Admin@Quyn MINGW64 ~/Desktop/24174600129_Dao_Thi_Quyen_bai_tap_18A3 (main)
+$ git push origin --delete branch_4
+To https://github.com/Daothiquyen24174600129/24174600129_Dao_Thi_Quyen_bai_tap_18A3.git
+ - [deleted]         branch_4
+
+Admin@Quyn MINGW64 ~/Desktop/24174600129_Dao_Thi_Quyen_bai_tap_18A3 (main)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+Your branch is up to date with 'origin/branch_1'.
+
+Admin@Quyn MINGW64 ~/Desktop/24174600129_Dao_Thi_Quyen_bai_tap_18A3 (branch_1)
+$  git pull origin main
+remote: Enumerating objects: 23, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (19/19), done.
+remote: Total 20 (delta 8), reused 5 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (20/20), 7.86 KiB | 118.00 KiB/s, done.
+From https://github.com/Daothiquyen24174600129/24174600129_Dao_Thi_Quyen_bai_tap_18A3
+ * branch            main       -> FETCH_HEAD
+   0f6e8ea..b825e36  main       -> origin/main
+Updating 715577c..b825e36
+Fast-forward
+ caulenh.txt                | 312 +++++++++++++++++++++++++++++++++++++++++++++
+ main_folder/main_txt_1.txt |   0
+ main_folder/main_txt_2.txt |   0
+ main_folder/main_txt_3.txt |   0
+ text_branch_2.txt          |   1 +
+ text_branch_3.txt          |   1 +
+ text_branch_4.txt          |   1 +
+ 7 files changed, 315 insertions(+)
+ create mode 100644 caulenh.txt
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+
+Admin@Quyn MINGW64 ~/Desktop/24174600129_Dao_Thi_Quyen_bai_tap_18A3 (branch_1)
+$ git pull origin main
+From https://github.com/Daothiquyen24174600129/24174600129_Dao_Thi_Quyen_bai_tap_18A3
+ * branch            main       -> FETCH_HEAD
+Already up to date.
 
