@@ -1,0 +1,250 @@
+cô ơi em lỡ clear mất mấy bài đầu rồi ạ..
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git checkout main
+Already on 'main'
+M       README.md
+A       file_nhanh1.txt
+A       file_nhanh2.txt
+A       file_nhanh3.txt
+A       file_nhanh4.txt
+Your branch is up to date with 'origin/main'.
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git branch -D nhanh_4
+Deleted branch nhanh_4 (was b32cd05).
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git brach -l
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git pull
+remote: Enumerating objects: 23, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (17/17), done.
+remote: Total 21 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (21/21), 6.81 KiB | 218.00 KiB/s, done.
+From https://github.com/doduc1709/24174600130_Do_Minh_Duc_baitap
+   b32cd05..b893212  main       -> origin/main
+   b32cd05..804fa3c  nhanh_1    -> origin/nhanh_1
+   b32cd05..cc85b43  nhanh_2    -> origin/nhanh_2
+   b32cd05..958fc59  nhanh_3    -> origin/nhanh_3
+   b32cd05..a298e37  nhanh_4    -> origin/nhanh_4
+error: Your local changes to the following files would be overwritten by merge:
+        README.md
+Please commit your changes or stash them before you merge.
+Aborting
+Updating b32cd05..b893212
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ mkdir new_folder
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ cd new_folder
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap/new_folder (main)
+$ touch file1.txt
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap/new_folder (main)
+$ touch file2.txt
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap/new_folder (main)
+$ touch file3.txt
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap/new_folder (main)
+$ cd ..
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git add new_folder
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git commit -m "Them folder"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Admin@misu.(none)')
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git push origin
+To https://github.com/doduc1709/24174600130_Do_Minh_Duc_baitap.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/doduc1709/24174600130_Do_Minh_Duc_baitap.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git checkout nhanh_1
+Switched to branch 'nhanh_1'
+M       README.md
+A       file_nhanh1.txt
+A       file_nhanh2.txt
+A       file_nhanh3.txt
+A       file_nhanh4.txt
+A       new_folder/file1.txt
+A       new_folder/file2.txt
+A       new_folder/file3.txt
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (nhanh_1)
+$ git checkout -b nhanh_5
+Switched to a new branch 'nhanh_5'
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (nhanh_5)
+$ ls
+README.md  file_nhanh1.txt  file_nhanh2.txt  file_nhanh3.txt  file_nhanh4.txt  new_folder/
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (nhanh_5)
+$ git checkout main
+Switched to branch 'main'
+M       README.md
+A       file_nhanh1.txt
+A       file_nhanh2.txt
+A       file_nhanh3.txt
+A       file_nhanh4.txt
+A       new_folder/file1.txt
+A       new_folder/file2.txt
+A       new_folder/file3.txt
+Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git checkout -b "nhanh_5"
+fatal: a branch named 'nhanh_5' already exists
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git push origin nhanh_5
+Total 0 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_5' on GitHub by visiting:
+remote:      https://github.com/doduc1709/24174600130_Do_Minh_Duc_baitap/pull/new/nhanh_5
+remote:
+To https://github.com/doduc1709/24174600130_Do_Minh_Duc_baitap.git
+ * [new branch]      nhanh_5 -> nhanh_5
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git checkout main
+Already on 'main'
+M       README.md
+A       file_nhanh1.txt
+A       file_nhanh2.txt
+A       file_nhanh3.txt
+A       file_nhanh4.txt
+A       new_folder/file1.txt
+A       new_folder/file2.txt
+A       new_folder/file3.txt
+Your branch is behind 'origin/main' by 3 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git branch -d nhanh_5
+Deleted branch nhanh_5 (was b32cd05).
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git branch -l
+* main
+  nhanh_1
+  nhanh_2
+  nhanh_3
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git branch -D nhanh_1
+Deleted branch nhanh_1 (was b32cd05).
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git branch -D nhanh_2
+Deleted branch nhanh_2 (was b32cd05).
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git branch nhanh_3
+fatal: a branch named 'nhanh_3' already exists
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git branch -l
+* main
+  nhanh_3
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git branch -D nhanh_3
+Deleted branch nhanh_3 (was b32cd05).
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git branch -l
+* main
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git add .
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git commit -m "Xóa file"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'Admin@misu.(none)')
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git push origin
+To https://github.com/doduc1709/24174600130_Do_Minh_Duc_baitap.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/doduc1709/24174600130_Do_Minh_Duc_baitap.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git fetch
+remote: Enumerating objects: 22, done.
+remote: Counting objects: 100% (22/22), done.
+remote: Compressing objects: 100% (14/14), done.
+remote: Total 16 (delta 5), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (16/16), 6.39 KiB | 327.00 KiB/s, done.
+From https://github.com/doduc1709/24174600130_Do_Minh_Duc_baitap
+   b893212..6377181  main       -> origin/main
+   804fa3c..e910b9d  nhanh_1    -> origin/nhanh_1
+   b32cd05..5ce1904  nhanh_5    -> origin/nhanh_5
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git pull
+error: Your local changes to the following files would be overwritten by merge:
+        README.md
+Please commit your changes or stash them before you merge.
+Aborting
+Updating b32cd05..6377181
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$ git push origin
+To https://github.com/doduc1709/24174600130_Do_Minh_Duc_baitap.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/doduc1709/24174600130_Do_Minh_Duc_baitap.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Admin@misu MINGW64 /d/Do_Minh_Duc_DHKL18A3HN/24174600130_Do_Minh_Duc_baitap (main)
+$
+____________Cô ơi em lỡ tay clear hết mấy bài đầu rồi ạ :(((_______________________
+         Mong cô rộng lượng bỏ qua cho em ạ.. Em cảm ơn cô.
