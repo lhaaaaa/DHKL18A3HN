@@ -1,0 +1,177 @@
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git add new_folder
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git commit -m "Them file"
+[main 557e8a9] Them file
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new_folder/file1.txt
+ create mode 100644 new_folder/file2.txt
+ create mode 100644 new_folder/file3.txt
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 348 bytes | 348.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/laidinhchung/24174600162_Lai_Dinh_Chung_18A3.git
+   bfab3b4..557e8a9  main -> main
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git checkout nhanh_1
+Switched to branch 'nhanh_1'
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (nhanh_1)
+$ git checkout -b nhanh_5
+Switched to a new branch 'nhanh_5'
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (nhanh_5)
+$ ls
+README.md  file_nhanh1.txt
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (nhanh_5)
+$ echo "Sua file" > file_nhanh1.txt
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (nhanh_5)
+$ git add .
+warning: in the working copy of 'file_nhanh1.txt', LF will be replaced by CRLF the next time Git touches it
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (nhanh_5)
+$ git commit -m "Sua doi file"
+[nhanh_5 197d09b] Sua doi file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (nhanh_5)
+$ git push origin nhanh_5
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 304 bytes | 304.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_5' on GitHub by visiting:
+remote:      https://github.com/laidinhchung/24174600162_Lai_Dinh_Chung_18A3/pull/new/nhanh_5
+remote:
+To https://github.com/laidinhchung/24174600162_Lai_Dinh_Chung_18A3.git
+ * [new branch]      nhanh_5 -> nhanh_5
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (nhanh_5)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git branch -d nhanh_5
+error: the branch 'nhanh_5' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D nhanh_5'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git branch -D nhanh_5
+Deleted branch nhanh_5 (was 197d09b).
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git branch -l
+* main
+  nhanh_1
+  nhanh_2
+  nhanh_3
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git branch -D nhanh_1
+Deleted branch nhanh_1 (was cfc5ecb).
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git branch -D nhanh_2
+Deleted branch nhanh_2 (was d5b80c8).
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$  branch -D nhanh_3
+bash: branch: command not found
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git branch -D nhanh_2
+error: branch 'nhanh_2' not found
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git branch -D nhanh_3
+Deleted branch nhanh_3 (was 2ed34d7).
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git add .
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git commit -m "Xoa file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git push origin
+To https://github.com/laidinhchung/24174600162_Lai_Dinh_Chung_18A3.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/laidinhchung/24174600162_Lai_Dinh_Chung_18A3.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git fetch
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 9 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (9/9), 4.63 KiB | 92.00 KiB/s, done.
+From https://github.com/laidinhchung/24174600162_Lai_Dinh_Chung_18A3
+   557e8a9..62b04c5  main       -> origin/main
+   cfc5ecb..d7b6ae1  nhanh_1    -> origin/nhanh_1
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git pull
+Updating 557e8a9..62b04c5
+Fast-forward
+ file_nhanh1.txt | 1 +
+ file_nhanh2.txt | 1 +
+ file_nhanh3.txt | 1 +
+ file_nhanh4.txt | 1 +
+ 4 files changed, 4 insertions(+)
+ create mode 100644 file_nhanh1.txt
+ create mode 100644 file_nhanh2.txt
+ create mode 100644 file_nhanh3.txt
+ create mode 100644 file_nhanh4.txt
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git push origin
+Everything up-to-date
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git branch -l
+* main
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git add .
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git commit -m "Xoa file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$ git push origin
+Everything up-to-date
+
+Admin@Admin MINGW64 /d/bai tap/24174600162_Lai_Dinh_Chung_18A3/24174600162_Lai_Dinh_Chung_18A3 (main)
+$
