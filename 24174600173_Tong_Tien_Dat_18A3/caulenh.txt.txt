@@ -1,0 +1,362 @@
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents
+$ git clone https://github.com/Dat-18A3/24174600173_Tong_Tien_Dat_baitap.git
+Cloning into '24174600173_Tong_Tien_Dat_baitap'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents
+$ cd 24174600173_Tong_Tien_Dat_baitap
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur, eros at
+lacinia suscipit, magna turpis aliquam est, sit amet aliquam quam libero id mi. Ut vel
+placerat risus. Sed tempor in ex vitae sodales. Donec et tempor orci. In pharetra viverra
+sagittis. Vestibulum risus ante, molestie ac eros efficitur, bibendum tincidunt turpis. In sit
+amet tortor gravida, ultricies ante vitae, varius tortor. Aliquam finibus porta nulla sed
+gravida. Aliquam ultricies dapibus ante eget molestie. In hac habitasse platea dictumst.
+Aliquam aliquam enim at massa pharetra, et vestibulum sapien consequat. Donec
+accumsan quis metus at pellentesque. Morbi quis felis placerat, interdum justo a, aliquam
+risus." > README.md
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git add .
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git commit -m "Thay doi file"
+[main 0f3e5f7] Thay doi file
+ 1 file changed, 9 insertions(+), 2 deletions(-)
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 631 bytes | 631.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Dat-18A3/24174600173_Tong_Tien_Dat_baitap.git
+   f911b44..0f3e5f7  main -> main
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git checkout -b nhanh_1
+Switched to a new branch 'nhanh_1'
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_1)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > file_nhanh1.txt
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_1)
+$ git add .
+warning: in the working copy of 'file_nhanh1.txt', LF will be replaced by CRLF the next time Git touches it
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_1)
+$ git commit -m "Them nhanh 1"
+[nhanh_1 8c29430] Them nhanh 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file_nhanh1.txt
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_1)
+$ git push origin nhanh_1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 350 bytes | 350.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_1' on GitHub by visiting:
+remote:      https://github.com/Dat-18A3/24174600173_Tong_Tien_Dat_baitap/pull/new/nhanh_1
+remote:
+To https://github.com/Dat-18A3/24174600173_Tong_Tien_Dat_baitap.git
+ * [new branch]      nhanh_1 -> nhanh_1
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git checkout -b nhanh_2
+Switched to a new branch 'nhanh_2'
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_2)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales." > file_nhanh2.txt
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_2)
+$ git add .
+warning: in the working copy of 'file_nhanh2.txt', LF will be replaced by CRLF the next time Git touches it
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_2)
+$ git commit -m "Them nhanh 2"
+[nhanh_2 b0dce2c] Them nhanh 2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file_nhanh2.txt
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_2)
+$ git push origin nhanh_2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 341 bytes | 341.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_2' on GitHub by visiting:
+remote:      https://github.com/Dat-18A3/24174600173_Tong_Tien_Dat_baitap/pull/new/nhanh_2
+remote:
+To https://github.com/Dat-18A3/24174600173_Tong_Tien_Dat_baitap.git
+ * [new branch]      nhanh_2 -> nhanh_2
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git checkout -b nhanh_3
+Switched to a new branch 'nhanh_3'
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_3)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > file_nhanh3.txt
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_3)
+$ git add .
+warning: in the working copy of 'file_nhanh3.txt', LF will be replaced by CRLF the next time Git touches it
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_3)
+$ git commit -m "Them nhanh 3"
+[nhanh_3 19a6203] Them nhanh 3
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file_nhanh3.txt
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_3)
+$ git push origin nhanh_3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 350 bytes | 350.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_3' on GitHub by visiting:
+remote:      https://github.com/Dat-18A3/24174600173_Tong_Tien_Dat_baitap/pull/new/nhanh_3
+remote:
+To https://github.com/Dat-18A3/24174600173_Tong_Tien_Dat_baitap.git
+ * [new branch]      nhanh_3 -> nhanh_3
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git checkout -b nhanh_4
+Switched to a new branch 'nhanh_4'
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_4)
+$ echo "Cras ac mi nec nisi porta ultrices sed non ante." > file_nhanh4.txt
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_4)
+$ git add .
+warning: in the working copy of 'file_nhanh4.txt', LF will be replaced by CRLF the next time Git touches it
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_4)
+$ git commit -m "Them nhanh 4"
+[nhanh_4 e8983ec] Them nhanh 4
+ 1 file changed, 1 insertion(+)
+ create mode 100644 file_nhanh4.txt
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_4)
+$ git push origin nhanh_4
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 340 bytes | 340.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_4' on GitHub by visiting:
+remote:      https://github.com/Dat-18A3/24174600173_Tong_Tien_Dat_baitap/pull/new/nhanh_4
+remote:
+To https://github.com/Dat-18A3/24174600173_Tong_Tien_Dat_baitap.git
+ * [new branch]      nhanh_4 -> nhanh_4
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git branch -D nhanh_4
+Deleted branch nhanh_4 (was e8983ec).
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git branch -l
+* main
+  nhanh_1
+  nhanh_2
+  nhanh_3
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git pull
+Already up to date.
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ mkdir new_folder
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ cd new_folder
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap/new_folder (main)
+$ touch main_txt_1.txt
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap/new_folder (main)
+$ touch main_txt_2.txt
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap/new_folder (main)
+$ touch main_txt_3.txt
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap/new_folder (main)
+$ cd ..
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git add .
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git add new_folder
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git commit -m "Them folder"
+[main 16e6f95] Them folder
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new_folder/main_txt_1.txt
+ create mode 100644 new_folder/main_txt_2.txt
+ create mode 100644 new_folder/main_txt_3.txt
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 350 bytes | 350.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/Dat-18A3/24174600173_Tong_Tien_Dat_baitap.git
+   0f3e5f7..16e6f95  main -> main
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git pull
+Already up to date.
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git checkout nhanh_1
+Switched to branch 'nhanh_1'
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_1)
+$ git checkout -b nhanh_5
+Switched to a new branch 'nhanh_5'
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_5)
+$ echo "Etiam malesuada felis nulla, ac porta dui sollicitudin eget. Mauris hendrerit non
+metus eget pellentesque. Etiam ornare ante at pretium hendrerit. Proin molestie accumsan
+sapien, ac finibus libero lobortis quis. Praesent ac commodo eros. Nullam malesuada v el
+dui nec feugiat. Cras justo ipsum, scelerisque et elit vitae, porttitor tristique turpis. Nam
+ut hendrerit est. Nulla sed tincidunt nibh. Class aptent taciti sociosqu ad litora torquent
+per conubia nostra, per inceptos himenaeos. Quisque vitae egestas lacus. Phasellus turpis
+ante, euismod quis pellentesque et, pharetra id ligula. Vestibulum mattis sem ac ligula
+auctor viverra. Phasellus dignissim mollis leo, vitae tristique enim." > file_nhanh1.txt
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_5)
+$ git add .
+warning: in the working copy of 'file_nhanh1.txt', LF will be replaced by CRLF the next time Git touches it
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_5)
+$ git commit -m "Sua nhanh 1"
+[nhanh_5 f599087] Sua nhanh 1
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_5)
+$ git push origin nhanh_5
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 674 bytes | 674.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_5' on GitHub by visiting:
+remote:      https://github.com/Dat-18A3/24174600173_Tong_Tien_Dat_baitap/pull/new/nhanh_5
+remote:
+To https://github.com/Dat-18A3/24174600173_Tong_Tien_Dat_baitap.git
+ * [new branch]      nhanh_5 -> nhanh_5
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (nhanh_5)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git branch -D nhanh_5
+Deleted branch nhanh_5 (was f599087).
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git branch -l
+* main
+  nhanh_1
+  nhanh_2
+  nhanh_3
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git branch -D nhanh_1
+Deleted branch nhanh_1 (was 8c29430).
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git branch -D nhanh_2
+Deleted branch nhanh_2 (was b0dce2c).
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git branch -D nhanh_3
+Deleted branch nhanh_3 (was 19a6203).
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git pull
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (9/9), done.
+remote: Total 9 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (9/9), 4.60 KiB | 107.00 KiB/s, done.
+From https://github.com/Dat-18A3/24174600173_Tong_Tien_Dat_baitap
+   16e6f95..05d53bc  main       -> origin/main
+   8c29430..28a01e6  nhanh_1    -> origin/nhanh_1
+Updating 16e6f95..05d53bc
+Fast-forward
+ file_nhanh1.txt | 8 ++++++++
+ file_nhanh2.txt | 1 +
+ file_nhanh3.txt | 1 +
+ file_nhanh4.txt | 1 +
+ 4 files changed, 11 insertions(+)
+ create mode 100644 file_nhanh1.txt
+ create mode 100644 file_nhanh2.txt
+ create mode 100644 file_nhanh3.txt
+ create mode 100644 file_nhanh4.txt
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git add .
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git commit -m "Xoa file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$ git push origin
+Everything up-to-date
+
+MSI GAMING@MSI MINGW64 ~/OneDrive/Documents/24174600173_Tong_Tien_Dat_baitap (main)
+$
