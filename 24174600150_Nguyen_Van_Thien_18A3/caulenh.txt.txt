@@ -1,0 +1,172 @@
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git add new_folder
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ gi commit -m "Them folder"
+bash: gi: command not found
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git commit -m "Them folder"
+[main 60fdb5e] Them folder
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 new_folder/file1.txt
+ create mode 100644 new_folder/file2.txt
+ create mode 100644 new_folder/file3.txt
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 347 bytes | 115.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/nguyenvanthien601/24174600150_Nguyen_Van_Thien_baii_tap.gi
+t
+   8b5a766..60fdb5e  main -> main
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git checkout nhanh_1
+Switched to branch 'nhanh_1'
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (nhanh_1)
+$ git checkout -b nhanh_4
+Switched to a new branch 'nhanh_4'
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (nhanh_4)
+$ ls
+README.md  file_nhanh1.txt
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (nhanh_4)
+$ echo "Sua file" > file_nhanh1.txt
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (nhanh_4)
+$ git add .
+warning: in the working copy of 'file_nhanh1.txt', LF will be replaced by CRLF t
+he next time Git touches it
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (nhanh_4)
+$ git commit -m "Sua doi file"
+[nhanh_4 db5d803] Sua doi file
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (nhanh_4)
+$ git push origin nhanh_4
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 304 bytes | 152.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'nhanh_4' on GitHub by visiting:
+remote:      https://github.com/nguyenvanthien601/24174600150_Nguyen_Van_Thien_b
+aii_tap/pull/new/nhanh_4
+remote:
+To https://github.com/nguyenvanthien601/24174600150_Nguyen_Van_Thien_baii_tap.gi
+t
+ * [new branch]      nhanh_4 -> nhanh_4
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (nhanh_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git branch -d nhanh_4
+error: the branch 'nhanh_4' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D nhanh_4'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git branch -D nhanh_4
+Deleted branch nhanh_4 (was db5d803).
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git branch -l
+* main
+  nhanh_1
+  nhanh_2
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git branch -D nhanh_1
+Deleted branch nhanh_1 (was 34b217d).
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git branch -D nhanh_2
+Deleted branch nhanh_2 (was 7e4db2b).
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git add .
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git commit -m
+error: switch `m' requires a value
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git commit -m"Xoa file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git push origin
+To https://github.com/nguyenvanthien601/24174600150_Nguyen_Van_Thien_baii_tap.gi
+t
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/nguyenvanthien601/2417460
+0150_Nguyen_Van_Thien_baii_tap.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git fetch
+remote: Enumerating objects: 12, done.
+remote: Counting objects: 100% (12/12), done.
+remote: Compressing objects: 100% (7/7), done.
+remote: Total 7 (delta 2), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (7/7), 3.67 KiB | 68.00 KiB/s, done.
+From https://github.com/nguyenvanthien601/24174600150_Nguyen_Van_Thien_baii_tap
+   60fdb5e..e42edae  main       -> origin/main
+   34b217d..8436fb8  nhanh_1    -> origin/nhanh_1
+f
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git pull
+Updating 60fdb5e..e42edae
+Fast-forward
+ file_nhanh1.txt | 1 +
+ file_nhanh2.txt | 1 +
+ file_nhanh3.txt | 1 +
+ 3 files changed, 3 insertions(+)
+ create mode 100644 file_nhanh1.txt
+ create mode 100644 file_nhanh2.txt
+ create mode 100644 file_nhanh3.txt
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git push origin
+Everything up-to-date
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git branch -l
+* main
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git add .
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git commit -m "Xoa file"
+On branch main
+Your branch is up to date with 'origin/main'.
+
+nothing to commit, working tree clean
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
+$ git push origin
+Everything up-to-date
+
+Admin@Admin-PC MINGW64 ~/Documents/24174600150_Nguyen_Van_Thien_baii_tap (main)
