@@ -1,0 +1,396 @@
+câu 1
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học
+$ git clone https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap.git
+Cloning into '24174600146_Nguyen_Phuong_Thao_bai_tap'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+câu 2
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ git add README.md
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ git commit -m"Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur, eros at  lacinia
+suscipit, magna turpis aliquam est, sit amet aliquam quam libero id mi. Ut vel  placerat risus.
+Sed tempor in ex vitae sodales. Donec et tempor orci. In pharetra viverra  sagittis. Vestibulum
+risus ante, molestie ac eros efficitur, bibendum tincidunt turpis. In sit  amet tortor gravida,
+ultricies ante vitae, varius tortor. Aliquam finibus porta nulla sed  gravida. Aliquam ultricies
+dapibus ante eget molestie. In hac habitasse platea dictumst.  Aliquam aliquam enim at massa
+pharetra, et vestibulum sapien consequat. Donec  accumsan quis metus at pellentesque. Morbi
+quis felis placerat, interdum justo a, aliquam  risus. "
+[main b2ef5a2] Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur, eros at  lacinia suscipit, magna turpis aliquam est, sit amet aliquam quam libero id mi. Ut vel  placerat risus. Sed tempor in ex vitae sodales. Donec et tempor orci. In pharetra viverra  sagittis. Vestibulum risus ante, molestie ac eros efficitur, bibendum tincidunt turpis. In sit  amet tortor gravida, ultricies ante vitae, varius tortor. Aliquam finibus porta nulla sed  gravida. Aliquam ultricies dapibus ante eget molestie. In hac habitasse platea dictumst.  Aliquam aliquam enim at massa pharetra, et vestibulum sapien consequat. Donec  accumsan quis metus at pellentesque. Morbi quis felis placerat, interdum justo a, aliquam  risus.
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 1012 bytes | 1012.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap.git
+   f432456..b2ef5a2  main -> main
+câu 3
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ git checkout -b branch_1
+Switched to a new branch 'branch_1'
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_1)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_1)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > text_branch_1.txt
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_1)
+$ git add text_branch_1.txt
+warning: in the working copy of 'text_branch_1.txt', LF will be replaced by CRLF the next time Git touches it
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_1)
+$ git commit -m "Tạo file và thêm nội dung vào text_branch_1.txt "
+[branch_1 75de12b] Tạo file và thêm nội dung vào text_branch_1.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_1.txt
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ git checkout -b branch_2
+Switched to a new branch 'branch_2'
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_2)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales." > text_branch_2.txt
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_2)
+$ git add text_branch_2.txt
+warning: in the working copy of 'text_branch_2.txt', LF will be replaced by CRLF the next time Git touches it
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_2)
+$ git commit -m "Tạo file và thêm nội dung vào text_branch_2.txt "
+[branch_2 a9be74a] Tạo file và thêm nội dung vào text_branch_2.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_2.txt
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$  git checkout -b branch_3
+Switched to a new branch 'branch_3'
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_3)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > text_branch_3.txt
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_3)
+$ git add text_branch_3.txt
+warning: in the working copy of 'text_branch_3.txt', LF will be replaced by CRLF the next time Git touches it
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_3)
+$ git commit -m "Tạo file và thêm nội dung vào text_branch_3.txt "
+[branch_3 3c301c5] Tạo file và thêm nội dung vào text_branch_3.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_3.txt
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_3)
+$  git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ git checkout -b branch_4
+Switched to a new branch 'branch_4'
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_4)
+$  echo "Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_4)
+$  echo "Cras ac mi nec nisi porta ultrices sed non ante." > text_branch_4.txt
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_4)
+$ git commit -m "Tạo file và thêm nội dung vào text_branch_4.txt "
+On branch branch_4
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text_branch_4.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_4)
+$ git add text_branch_4.txt
+warning: in the working copy of 'text_branch_4.txt', LF will be replaced by CRLF the next time Git touches it
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_4)
+$ git commit -m "Tạo file và thêm nội dung vào text_branch_4.txt "
+[branch_4 9858390] Tạo file và thêm nội dung vào text_branch_4.txt
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_4.txt
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_4)
+$  git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ git push -u origin main
+branch 'main' set up to track 'origin/main'.
+Everything up-to-date
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ git push -u origin branch_1
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 404 bytes | 101.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_1' on GitHub by visiting:
+remote:      https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap/pull/new/branch_1
+remote:
+To https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap.git
+ * [new branch]      branch_1 -> branch_1
+branch 'branch_1' set up to track 'origin/branch_1'.
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$  git push -u origin branch_2
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 398 bytes | 199.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_2' on GitHub by visiting:
+remote:      https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap/pull/new/branch_2
+remote:
+To https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap.git
+ * [new branch]      branch_2 -> branch_2
+branch 'branch_2' set up to track 'origin/branch_2'.
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ git push -u origin branch_3
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 408 bytes | 408.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_3' on GitHub by visiting:
+remote:      https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap/pull/new/branch_3
+remote:
+To https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap.git
+ * [new branch]      branch_3 -> branch_3
+branch 'branch_3' set up to track 'origin/branch_3'.
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ git push -u origin branch_4
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 397 bytes | 198.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_4' on GitHub by visiting:
+remote:      https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap/pull/new/branch_4
+remote:
+To https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap.git
+ * [new branch]      branch_4 -> branch_4
+branch 'branch_4' set up to track 'origin/branch_4'.
+câu 4
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ git branch -D branch_4
+Deleted branch branch_4 (was 9858390).
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$  git branch --list
+  branch_1
+  branch_2
+  branch_3
+* main
+
+câu 5
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ git pull
+Already up to date.
+
+câu 7
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ mkdir main_folder
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ cd main_folder
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap/main_folder (main)
+$ touch main_txt_1.txt main_txt_2.txt main_txt_3.txt
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap/main_folder (main)
+$  git add .
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap/main_folder (main)
+$ git commit -m " day la main_foler"
+[main 2587b9f]  day la main_foler
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap/main_folder (main)
+$ git pull origin main
+From https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap/main_folder (main)
+$  git push origin main
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 368 bytes | 184.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap.git
+   b2ef5a2..2587b9f  main -> main
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap/main_folder (main)
+$ git pull origin main
+From https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap
+ * branch            main       -> FETCH_HEAD
+Already up to date.
+câu 8
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap/main_folder (main)
+$  git checkout branch_1
+Switched to branch 'branch_1'
+Your branch is up to date with 'origin/branch_1'.
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap/main_folder (branch_1)
+$ cd ..
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_1)
+$ git checkout branch_5
+error: pathspec 'branch_5' did not match any file(s) known to git
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_1)
+$ git checkout -b branch_5
+Switched to a new branch 'branch_5'
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_5)
+$ echo "Etiam malesuada felis nulla, ac porta dui sollicitudin eget. Mauris hendrerit non  metus eget pellentesque. Etiam ornare ante at pretium hendrerit. Proin molestie accumsan  sapien, ac finibus libero lobortis quis. Praesent ac commodo eros. Nullam malesuada v el  dui nec feugiat. Cras justo ipsum, scelerisque et elit vitae, porttitor tristique turpis. Nam  ut hendrerit est. Nulla sed tincidunt nibh. Class aptent taciti sociosqu ad litora torquent  per conubia nostra, per inceptos himenaeos. Quisque vitae egestas lacus. Phasellus turpis  ante, euismod quis pellentesque et, pharetra id ligula. Vestibulum mattis sem ac ligula  auctor viverra. Phasellus dignissim mollis leo, vitae tristique enim. ">text_branch_1.txt
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_5)
+$ git add text_branch_1.txt
+warning: in the working copy of 'text_branch_1.txt', LF will be replaced by CRLF the next time Git touches it
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_5)
+$ git commit -m " chinh sua branch_1 trong branch_5"
+[branch_5 246470b]  chinh sua branch_1 trong branch_5
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_5)
+$  git push origin branch_5
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 4 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 702 bytes | 351.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_5' on GitHub by visiting:
+remote:      https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap/pull/new/branch_5
+remote:
+To https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap.git
+ * [new branch]      branch_5 -> branch_5
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_5)
+$ git push origin --delete branch_5
+To https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap.git
+ - [deleted]         branch_5
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_5)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$  git branch -D branch_5
+Deleted branch branch_5 (was 246470b).
+câu 9
+làm trên pull
+câu 10
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ git branch -d branch_2
+warning: deleting branch 'branch_2' that has been merged to
+         'refs/remotes/origin/branch_2', but not yet merged to HEAD
+Deleted branch branch_2 (was 5c2bd54).
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ git branch -d branch_3
+warning: deleting branch 'branch_3' that has been merged to
+         'refs/remotes/origin/branch_3', but not yet merged to HEAD
+Deleted branch branch_3 (was cb5f23b).
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ git branch -d branch_4
+error: branch 'branch_4' not found
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$  git push origin --delete branch_2
+To https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap.git
+ - [deleted]         branch_2
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ git push origin --delete branch_3
+To https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap.git
+ - [deleted]         branch_3
+
+Admin@Quyn MINGW64 ~/Desktop/24174600129_Dao_Thi_Quyen_bai_tap_18A3 (main)
+$ git push origin --delete branch_4
+To https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap.git
+ - [deleted]         branch_4
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (main)
+$ git checkout branch_1
+Switched to branch 'branch_1'
+Your branch is up to date with 'origin/branch_1'.
+
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_1)
+$  git pull origin main
+remote: Enumerating objects: 23, done.
+remote: Counting objects: 100% (23/23), done.
+remote: Compressing objects: 100% (19/19), done.
+remote: Total 20 (delta 8), reused 5 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (20/20), 7.86 KiB | 118.00 KiB/s, done.
+From git clone https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap.git
+ * branch            main       -> FETCH_HEAD
+   0f6e8ea..b825e36  main       -> origin/main
+Updating 715577c..b825e36
+Fast-forward
+ caulenh.txt                | 312 +++++++++++++++++++++++++++++++++++++++++++++
+ main_folder/main_txt_1.txt |   0
+ main_folder/main_txt_2.txt |   0
+ main_folder/main_txt_3.txt |   0
+ text_branch_2.txt          |   1 +
+ text_branch_3.txt          |   1 +
+ text_branch_4.txt          |   1 +
+ 7 files changed, 315 insertions(+)
+ create mode 100644 caulenh.txt
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+ create mode 100644 text_branch_2.txt
+ create mode 100644 text_branch_3.txt
+ create mode 100644 text_branch_4.txt
+3
+thaon@PhuongThao MINGW64 ~/OneDrive/Documents/bài tập tin học/24174600146_Nguyen_Phuong_Thao_bai_tap (branch_1)
+$ git pull origin main
+From git clone https://github.com/24174600146-NguyenPhuongThao-18a3/24174600146_Nguyen_Phuong_Thao_bai_tap.git 
+ * branch            main       -> FETCH_HEAD
+Already up to date.
