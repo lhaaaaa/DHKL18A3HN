@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 Praesent ullamcorper orci eu erat placerat sodales
+=======
+Praesent ullamcorper orci eu erat placerat sodales
+>>>>>>> d016fdbacc47c3e4082e3789076c00d11aaea465
