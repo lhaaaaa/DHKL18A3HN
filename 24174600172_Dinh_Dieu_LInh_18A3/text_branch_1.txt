@@ -1,0 +1,5 @@
+<<<<<<< HEAD
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+=======
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+>>>>>>> d016fdbacc47c3e4082e3789076c00d11aaea465
