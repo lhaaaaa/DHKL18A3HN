@@ -1,0 +1,498 @@
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở
+$ git clone https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap.git
+Cloning into '24174600172_Dinh_Dieu_Linh_Bai_Tap'...
+remote: Enumerating objects: 3, done.
+remote: Counting objects: 100% (3/3), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+Receiving objects: 100% (3/3), done.
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở
+$ cd "24174600172_Dinh_Dieu_Linh_Bai_Tap"
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer efficitur, eros at lacinia
+suscipit, magna turpis aliquam est, sit amet aliquam quam libero id mi. Ut vel placerat risus.
+Sed tempor in ex vitae sodales. Donec et tempor orci. In pharetra viverra sagittis. Vestibulum
+risus ante, molestie ac eros efficitur, bibendum tincidunt turpis. In sit amet tortor gravida,
+ultricies ante vitae, varius tortor. Aliquam finibus porta nulla sed gravida. Aliquam ultricies
+dapibus ante eget molestie. In hac habitasse platea dictumst. Aliquam aliquam enim at massa
+pharetra, et vestibulum sapien consequat. Donec accumsan quis metus at pellentesque. Morbi
+quis felis placerat, interdum justo a, aliquam risus." > README.md
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git add .
+warning: in the working copy of 'README.md', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git commit -m "sửa README"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ADMIN@LAPTOP-209412HK.(none)')
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git config --global user.email "dieulinh0919@gmail.com"
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git config --global user.name " Đinh Diệu Linh"
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git commit -m "sửa README"
+[main b4cf322] sửa README
+ 1 file changed, 8 insertions(+), 1 deletion(-)
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git push origin
+info: please complete authentication in your browser...
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 642 bytes | 128.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap.git
+   018c8ee..b4cf322  main -> main
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git checkout -b "branch_1"
+Switched to a new branch 'branch_1'
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_1)
+$ echo "Lorem ipsum dolor sit amet, consectetur adipiscing elit." > "text_branch_1.txt"
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_1)
+$ git add
+Nothing specified, nothing added.
+hint: Maybe you wanted to say 'git add .'?
+hint: Disable this message with "git config advice.addEmptyPathspec false"
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_1)
+$ git commit -m "sửa nhánh 1"
+On branch branch_1
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        text_branch_1.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_1)
+$ git add .
+warning: in the working copy of 'text_branch_1.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_1)
+$ git commit -m "sửa nhánh 1"
+[branch_1 a627a0e] sửa nhánh 1
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_1.txt
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_1)
+$ git push origin "branch_1"
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 362 bytes | 181.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_1' on GitHub by visiting:
+remote:      https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap/pull/new/branch_1
+remote:
+To https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap.git
+ * [new branch]      branch_1 -> branch_1
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_1)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git checkout -b "branch_2"
+Switched to a new branch 'branch_2'
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_2)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales" > "branch_2"
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_2)
+$ rm -d
+rm: missing operand
+Try 'rm --help' for more information.
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_2)
+$ rm -d "branch 2"
+rm: cannot remove 'branch 2': No such file or directory
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_2)
+$ rm -d "branch_2"
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_2)
+$ ls
+]README.md
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_2)
+$ echo"Praesent ullamcorper orci eu erat placerat sodales" >"text_branch_2.txt"
+bash: echoPraesent ullamcorper orci eu erat placerat sodales: command not found
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_2)
+$ echo"Praesent ullamcorper orci eu erat placerat sodales" >"text_branch_2.txt"
+bash: echoPraesent ullamcorper orci eu erat placerat sodales: command not found
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_2)
+$ echo "Praesent ullamcorper orci eu erat placerat sodales" >"text_branch_2.txt"
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_2)
+$ git add .
+warning: in the working copy of 'text_branch_2.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_2)
+$ git commit -m "sửa nhánh 2"
+[branch_2 961f8c4] sửa nhánh 2
+ 1 file changed, 1 insertion(+)
+ create mode 100644 text_branch_2.txt
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_2)
+$ git push origin "text_branch_2.txt"
+error: src refspec text_branch_2.txt does not match any
+error: failed to push some refs to 'https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap.git'
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_2)
+$ git push origin "branch_2"
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 354 bytes | 88.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_2' on GitHub by visiting:
+remote:      https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap/pull/new/branch_2
+remote:
+To https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap.git
+ * [new branch]      branch_2 -> branch_2
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_2)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git check out -b "branch_3"
+git: 'check' is not a git command. See 'git --help'.
+
+The most similar command is
+        checkout
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > "branch_3"
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git add .
+warning: in the working copy of 'branch_3', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git commit -m "sửa nhánh 3"
+[main b8cdd80] sửa nhánh 3
+ 1 file changed, 1 insertion(+)
+ create mode 100644 branch_3
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git push origin "branch_3"
+error: src refspec branch_3 does not match any
+error: failed to push some refs to 'https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap.git'
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git checkout -b "branch_3"
+Switched to a new branch 'branch_3'
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_3)
+$ echo "Integer sit amet nisi aliquam, tempor libero quis, cursus erat." > "branch_3"
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_3)
+$ git add .
+warning: in the working copy of 'branch_3', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_3)
+$ git commit -m "sửa nhánh 3"
+On branch branch_3
+nothing to commit, working tree clean
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_3)
+$ git push origin "branch_3"
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 356 bytes | 178.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_3' on GitHub by visiting:
+remote:      https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap/pull/new/branch_3
+remote:
+To https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap.git
+ * [new branch]      branch_3 -> branch_3
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_3)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git checkout -b "branch_4"
+Switched to a new branch 'branch_4'
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_4)
+$ echo "Cras ac mi nec nisi porta ultrices sed non ante." > "branch_4"
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_4)
+$ git add .
+warning: in the working copy of 'branch_4', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_4)
+$ git commit -m "sửa nhánh 4"
+[branch_4 fec701d] sửa nhánh 4
+ 1 file changed, 1 insertion(+)
+ create mode 100644 branch_4
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_4)
+$ git push origin "branch_4"
+Enumerating objects: 4, done.
+Counting objects: 100% (4/4), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 370 bytes | 370.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_4' on GitHub by visiting:
+remote:      https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap/pull/new/branch_4
+remote:
+To https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap.git
+ * [new branch]      branch_4 -> branch_4
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (branch_4)
+$ git checkout main
+Switched to branch 'main'
+Your branch is ahead of 'origin/main' by 1 commit.
+  (use "git push" to publish your local commits)
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git branch -delete "branch_4"
+error: did you mean `--delete` (with two dashes)?
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git branch --delete "branch_4"
+error: the branch 'branch_4' is not fully merged
+hint: If you are sure you want to delete it, run 'git branch -D branch_4'
+hint: Disable this message with "git config advice.forceDeleteBranch false"
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git branch -D "branch_4"
+Deleted branch branch_4 (was fec701d).
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ git branch -l
+  branch_1
+  branch_2
+  branch_3
+* main
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ mkdir "main_folder"
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap (main)
+$ cd "main_folder"
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (main)
+$ touch main_txt_1.txt
+main_txt_2.txt
+main_txt_3.txt
+bash: main_txt_2.txt: command not found
+bash: main_txt_3.txt: command not found
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (main)
+$ touch main_txt_2.txt
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (main)
+$ touch main_txt_3.txt
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (main)
+$ git add .
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (main)
+$ git commit -m "làm bài này khó quá cố ơi"
+[main 2625db6] làm bài này khó quá cố ơi
+ 3 files changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main_folder/main_txt_1.txt
+ create mode 100644 main_folder/main_txt_2.txt
+ create mode 100644 main_folder/main_txt_3.txt
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (main)
+$ git push origin
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 418 bytes | 209.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap.git
+   b4cf322..2625db6  main -> main
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (main)
+$ git checkout "branch_1"
+Switched to branch 'branch_1'
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (branch_1)
+$ git checkout -b "branch_5"
+Switched to a new branch 'branch_5'
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (branch_5)
+$ echo "Etiam malesuada felis nulla, ac porta dui sollicitudin eget. Mauris hendrerit non metus
+eget pellentesque. Etiam ornare ante at pretium hendrerit. Proin molestie accumsan sapien, ac
+finibus libero lobortis quis. Praesent ac commodo eros. Nullam malesuada v el dui nec feugiat.
+Cras justo ipsum, scelerisque et elit vitae, porttitor tristique turpis. Nam ut hendrerit est. Nulla
+sed tincidunt nibh. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
+inceptos himenaeos. Quisque vitae egestas lacus. Phasellus turpis ante, euismod quis
+pellentesque et, pharetra id ligula. Vestibulum mattis sem ac ligula auctor viverra. Phasellus
+dignissim mollis leo, vitae tristique enim." > "text_branch_1.txt"
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (branch_5)
+$ git add .
+warning: in the working copy of 'main_folder/text_branch_1.txt', LF will be replaced by CRLF the next time Git touches it
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (branch_5)
+$ git commit -m "khó quá mãi em mới làm được ạ"
+[branch_5 7fab4a3] khó quá mãi em mới làm được ạ
+ 1 file changed, 8 insertions(+)
+ create mode 100644 main_folder/text_branch_1.txt
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (branch_5)
+$ git push origin "branchch_5"
+error: src refspec branchch_5 does not match any
+error: failed to push some refs to 'https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap.git'
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (branch_5)
+$ git push origin "branch_5"
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 12 threads
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 814 bytes | 407.00 KiB/s, done.
+Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+remote:
+remote: Create a pull request for 'branch_5' on GitHub by visiting:
+remote:      https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap/pull/new/branch_5
+remote:
+To https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap.git
+ * [new branch]      branch_5 -> branch_5
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (branch_5)
+$ git branch -D "branch_1"
+Deleted branch branch_1 (was a627a0e).
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (branch_5)
+$ git branch -D "branch_2"
+Deleted branch branch_2 (was 961f8c4).
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (branch_5)
+$ git brach -D "branch_4"
+git: 'brach' is not a git command. See 'git --help'.
+
+The most similar command is
+        branch
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (branch_5)
+$ git branch -D "branch_4"
+error: branch 'branch_4' not found
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (branch_5)
+$ git branch -D "brach_4"
+error: branch 'brach_4' not found
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (branch_5)
+$ git branch -D "branch_4"
+error: branch 'branch_4' not found
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (branch_5)
+$ git branch -D "branch_3"
+Deleted branch branch_3 (was b8cdd80).
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (branch_5)
+$ git push origin --delete
+fatal: --delete doesn't make sense without any refs
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (branch_5)
+$ git checkout main
+Switched to branch 'main'
+Your branch is up to date with 'origin/main'.
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (main)
+$ git push origin --delete
+fatal: --delete doesn't make sense without any refs
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (main)
+$ touch "caulenh.txt"
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (main)
+$ git add .
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (main)
+$ git commit -m "caulenh.txt"
+[main ca56921] caulenh.txt
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 main_folder/caulenh.txt
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (main)
+$ git push origin
+To https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap.git
+ ! [rejected]        main -> main (fetch first)
+error: failed to push some refs to 'https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap.git'
+hint: Updates were rejected because the remote contains work that you do not
+hint: have locally. This is usually caused by another repository pushing to
+hint: the same ref. If you want to integrate the remote changes, use
+hint: 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (main)
+$ git fetch
+remote: Enumerating objects: 15, done.
+remote: Counting objects: 100% (15/15), done.
+remote: Compressing objects: 100% (8/8), done.
+remote: Total 8 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+Unpacking objects: 100% (8/8), 3.97 KiB | 54.00 KiB/s, done.
+From https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap
+   2625db6..c840a31  main       -> origin/main
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (main)
+$ git add .
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (main)
+$ git commit -m "caulenh.txt"
+On branch main
+Your branch and 'origin/main' have diverged,
+and have 1 and 8 different commits each, respectively.
+
+nothing to commit, working tree clean
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (main)
+$ git push origin
+To https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap.git
+ ! [rejected]        main -> main (non-fast-forward)
+error: failed to push some refs to 'https://github.com/24174600172-Dinh-Dieu-linh-DHKL18A3/24174600172_Dinh_Dieu_Linh_Bai_Tap.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. If you want to integrate the remote changes,
+hint: use 'git pull' before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+
+ADMIN@LAPTOP-209412HK MINGW64 ~/OneDrive/bài tập của cô Hằng Anh tin học cơ sở/24174600172_Dinh_Dieu_Linh_Bai_Tap/main_folder (main)
+$
